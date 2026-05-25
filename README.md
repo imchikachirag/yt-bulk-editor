@@ -4,7 +4,7 @@
 
 Built by [Chirag Mehta](https://chiragmehta.info) ([@imchikachirag](https://twitter.com/imchikachirag))
 
-Live at: [chiragmehta.info/youtube-bulk-editor](https://chiragmehta.info/youtube-bulk-editor)
+Live at: [chiragmehta.info/yt-bulk-editor](https://chiragmehta.info/yt-bulk-editor)
 
 ---
 
@@ -70,7 +70,7 @@ npm start
 
 ### Frontend
 
-Copy the `frontend/` folder to your web server. Update `BACKEND_URL` in `editor.js` to point to your backend.
+Copy the `docs/` folder to your web server. Update `BACKEND_URL` in `editor.js` to point to your backend.
 
 ## Contributing
 
