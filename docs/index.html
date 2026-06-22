@@ -905,6 +905,11 @@
       #saveBar:not(.hidden) ~ .table-section { padding-top: 0 !important; }
       .screen-signin { padding-top: 32px; }
     }
+  
+    /* App-name lockup with tagline */
+    /* Copyright (c) 2026 Chirag Mehta - github.com/imchikachirag/yt-bulk-editor */
+    .logo-lock { display: inline-flex; flex-direction: column; line-height: 1.12; }
+    .logo-tag { font-size: 10px; font-weight: 400; color: var(--text2, #888); letter-spacing: .02em; white-space: nowrap; }
   </style>
 </head>
 <body>
@@ -941,7 +946,7 @@
     <polygon points="-4,4 4,4 0,14" fill="#2c1a0e"/>
   </g>
 </svg>
-      Video <span class="logo-accent">Bulk</span> Editor
+      <span class="logo-lock"><span class="logo-name">Video <span class="logo-accent">Bulk</span> Editor</span><span class="logo-tag">Bulk Edit YouTube Videos</span></span>
       <a id="appVersionBadge" class="version-badge" href="changelog/?from=app" target="_blank" rel="noopener noreferrer" title="View changelog" style="text-decoration:none">v2.3.3</a>
     </a>
     <div id="channelBadge" class="channel-badge hidden">

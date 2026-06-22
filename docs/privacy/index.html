@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-  YouTube Bulk Editor  -  Privacy Policy
-  github.com/imchikachirag/youtube-bulk-editor
+  Video Bulk Editor  -  Privacy Policy
+  github.com/imchikachirag/yt-bulk-editor
 
   Copyright (c) 2026 Chirag Mehta
   https://chiragmehta.info | @imchikachirag
@@ -12,8 +12,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy  -  YouTube Bulk Editor by Chirag Mehta</title>
-  <meta name="description" content="Privacy policy for YouTube Bulk Editor. This tool stores nothing. Zero data retention. All processing happens in your browser.">
+  <title>Privacy Policy  -  Video Bulk Editor by Chirag Mehta</title>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chiragmehta.info/yt-bulk-editor/privacy/">
+  <meta property="og:title" content="Privacy Policy  -  Video Bulk Editor by Chirag Mehta">
+  <meta property="og:description" content="Privacy policy for Video Bulk Editor. This tool stores nothing. Zero data retention. All processing happens in your browser.">
+  <meta name="twitter:card" content="summary">
+  <meta name="description" content="Privacy policy for Video Bulk Editor. This tool stores nothing. Zero data retention. All processing happens in your browser.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://chiragmehta.info/yt-bulk-editor/privacy">
 
@@ -60,6 +65,11 @@
       background: var(--surface);
     }
     .footer a { color: var(--accent); text-decoration: none; }
+  
+    /* App-name lockup with tagline */
+    /* Copyright (c) 2026 Chirag Mehta - github.com/imchikachirag/yt-bulk-editor */
+    .logo-lock { display: inline-flex; flex-direction: column; line-height: 1.12; }
+    .logo-tag { font-size: 10px; font-weight: 400; color: var(--text2, #888); letter-spacing: .02em; white-space: nowrap; }
   </style>
 </head>
 <body>
@@ -93,7 +103,7 @@
     <polygon points="-4,4 4,4 0,14" fill="#2c1a0e"/>
   </g>
 </svg>
-    YouTube <span class="logo-accent">Bulk</span> Editor
+    <span class="logo-lock"><span class="logo-name">Video <span class="logo-accent">Bulk</span> Editor</span><span class="logo-tag">Bulk Edit YouTube Videos</span></span>
   </a>
 </header>
 
@@ -102,14 +112,14 @@
   <p class="meta">Last updated: May 2026 &nbsp;·&nbsp; Effective immediately &nbsp;·&nbsp; by <a href="https://chiragmehta.info">Chirag Mehta</a></p>
 
   <div class="privacy-highlight">
-    <strong>The short version:</strong> YouTube Bulk Editor stores absolutely nothing about you. No database. No logs. No tracking. Your OAuth token lives only in your browser tab and is gone the moment you close it or click Disconnect. Your video data goes directly from your browser to YouTube  -  our server never sees it.
+    <strong>The short version:</strong> Video Bulk Editor stores absolutely nothing about you. No database. No logs. No tracking. Your OAuth token lives only in your browser tab and is gone the moment you close it or click Disconnect. Your video data goes directly from your browser to YouTube  -  our server never sees it.
   </div>
 
   <h2>What data we collect</h2>
-  <p>None. YouTube Bulk Editor does not collect, store, transmit, or share any personal data, video data, usage data, or analytics of any kind.</p>
+  <p>None. Video Bulk Editor does not collect, store, transmit, or share any personal data, video data, usage data, or analytics of any kind.</p>
 
   <h2>YouTube Terms of Service</h2>
-  <p>By using YouTube Bulk Editor, you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>. This tool accesses the YouTube Data API v3 and is subject to the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank" rel="noopener noreferrer">YouTube API Services Terms of Service</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+  <p>By using Video Bulk Editor, you agree to be bound by the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>. This tool accesses the YouTube Data API v3 and is subject to the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank" rel="noopener noreferrer">YouTube API Services Terms of Service</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
 
   <h2>How authentication works</h2>
   <p>This tool uses Google OAuth 2.0 to authenticate you with YouTube. Here is exactly what happens:</p>
@@ -130,7 +140,7 @@
     <li>Redirecting you to Google's OAuth login page</li>
     <li>Exchanging the one-time OAuth code for a token and forwarding it to your browser</li>
   </ul>
-  <p>The server has no database connection. It does not log requests. It does not store tokens. The complete source code is publicly readable at <a href="https://github.com/imchikachirag/yt-bulk-editor/blob/main/backend/server.js" target="_blank">github.com/imchikachirag/youtube-bulk-editor</a>.</p>
+  <p>The server has no database connection. It does not log requests. It does not store tokens. The complete source code is publicly readable at <a href="https://github.com/imchikachirag/yt-bulk-editor/blob/main/backend/server.js" target="_blank">github.com/imchikachirag/yt-bulk-editor</a>.</p>
 
   <h2>Third parties</h2>
   <p>No third-party analytics, advertising, tracking, or data-sharing SDKs are used. The only external services this tool communicates with are:</p>
@@ -151,16 +161,16 @@
   <p>If this policy changes, the updated date at the top of this page will be updated. Since we collect no data, there is nothing substantive to change.</p>
 
   <h2>Revoking access and deleting your data</h2>
-  <p>Since YouTube Bulk Editor stores no data about you, there is nothing to delete on our end. Your OAuth access token exists only in your browser's <code>sessionStorage</code> for the duration of your session and is automatically removed when you close the tab.</p>
+  <p>Since Video Bulk Editor stores no data about you, there is nothing to delete on our end. Your OAuth access token exists only in your browser's <code>sessionStorage</code> for the duration of your session and is automatically removed when you close the tab.</p>
   <p>To revoke this tool's access to your YouTube account at any time:</p>
   <ul>
     <li>Click the <strong>Disconnect</strong> button inside the app. This immediately removes the token from your browser and revokes it at Google.</li>
-    <li>Or visit your <a href="https://myaccount.google.com/connections?filters=3,4&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Account security settings</a> and remove YouTube Bulk Editor from the list of connected apps.</li>
+    <li>Or visit your <a href="https://myaccount.google.com/connections?filters=3,4&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Account security settings</a> and remove Video Bulk Editor from the list of connected apps.</li>
   </ul>
   <p>Either method fully and permanently removes this tool's access to your YouTube account.</p>
 
   <h2>Data Accessed</h2>
-  <p>YouTube Bulk Editor accesses the following Google user data via the YouTube Data API v3:</p>
+  <p>Video Bulk Editor accesses the following Google user data via the YouTube Data API v3:</p>
   <ul>
     <li>Your YouTube channel information (channel name, thumbnail, uploads playlist ID)</li>
     <li>Your YouTube video metadata (titles, descriptions, tags, privacy status, publish dates, view counts, like counts, comment counts, duration, category, language settings)</li>
@@ -172,17 +182,17 @@
   <p>The data accessed is used solely to display your video library in the editor interface and to apply the title, description, and tag edits you make back to your YouTube channel via the YouTube Data API. No data is used for any other purpose including advertising, analytics, profiling, or training machine learning models.</p>
 
   <h2>Data Sharing</h2>
-  <p>YouTube Bulk Editor does not share any Google user data with any third parties. There are no analytics services, advertising networks, data brokers, or other external services that receive your data. The only external service the app communicates with is the YouTube Data API (googleapis.com) to read and update your video metadata on your behalf.</p>
+  <p>Video Bulk Editor does not share any Google user data with any third parties. There are no analytics services, advertising networks, data brokers, or other external services that receive your data. The only external service the app communicates with is the YouTube Data API (googleapis.com) to read and update your video metadata on your behalf.</p>
 
   <h2>Data Storage and Protection</h2>
-  <p>YouTube Bulk Editor stores no Google user data. The OAuth access token is held exclusively in your browser's <code>sessionStorage</code> for the duration of your active session. It is never written to any database, file, server log, or external service. Our backend server (Google Cloud Run) performs only the one-time OAuth code exchange and immediately forwards the token to your browser - it does not retain the token or any user data at any point. The complete server source code is publicly available at <a href="https://github.com/imchikachirag/yt-bulk-editor/blob/main/backend/server.js" target="_blank" rel="noopener noreferrer">github.com/imchikachirag/youtube-bulk-editor</a> for independent verification.</p>
+  <p>Video Bulk Editor stores no Google user data. The OAuth access token is held exclusively in your browser's <code>sessionStorage</code> for the duration of your active session. It is never written to any database, file, server log, or external service. Our backend server (Google Cloud Run) performs only the one-time OAuth code exchange and immediately forwards the token to your browser - it does not retain the token or any user data at any point. The complete server source code is publicly available at <a href="https://github.com/imchikachirag/yt-bulk-editor/blob/main/backend/server.js" target="_blank" rel="noopener noreferrer">github.com/imchikachirag/yt-bulk-editor</a> for independent verification.</p>
 
   <h2>Data Retention and Deletion</h2>
-  <p>Since no Google user data is stored by YouTube Bulk Editor, there is no data to retain or delete on our end. The OAuth access token exists only in your browser's <code>sessionStorage</code> and is automatically removed when you close the browser tab.</p>
+  <p>Since no Google user data is stored by Video Bulk Editor, there is no data to retain or delete on our end. The OAuth access token exists only in your browser's <code>sessionStorage</code> and is automatically removed when you close the browser tab.</p>
   <p>To permanently remove this app's access to your Google account:</p>
   <ul>
     <li>Click the <strong>Disconnect</strong> button inside the app. This immediately clears the token from your browser and revokes the app's access at Google.</li>
-    <li>Or visit your <a href="https://myaccount.google.com/connections?filters=3,4&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Account security settings</a> and remove YouTube Bulk Editor from the list of connected apps.</li>
+    <li>Or visit your <a href="https://myaccount.google.com/connections?filters=3,4&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Account security settings</a> and remove Video Bulk Editor from the list of connected apps.</li>
   </ul>
 
   <h2>Contact</h2>
@@ -192,8 +202,8 @@
 
 <footer class="footer">
   <p>
-    <a href="https://chiragmehta.info/yt-bulk-editor">YouTube Bulk Editor</a> &nbsp;·&nbsp;
-    <a href="https://github.com/imchikachirag/youtube-bulk-editor" target="_blank">Open Source on GitHub</a> &nbsp;·&nbsp;
+    <a href="https://chiragmehta.info/yt-bulk-editor">Video Bulk Editor</a> &nbsp;·&nbsp;
+    <a href="https://github.com/imchikachirag/yt-bulk-editor" target="_blank">Open Source on GitHub</a> &nbsp;·&nbsp;
     <a href="https://chiragmehta.info" target="_blank">chiragmehta.info</a>
   </p>
   <p style="margin-top:8px">Copyright 2026 Chirag Mehta. Made with ❤️ in India.</p>
