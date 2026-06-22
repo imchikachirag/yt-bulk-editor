@@ -33,7 +33,14 @@
     .logo{font-size:16px;font-weight:700;color:var(--text);text-decoration:none;display:inline-flex;align-items:center;gap:8px;}
     .version-pill{background:var(--blue-lt);color:var(--blue-dk);font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;border:1px solid var(--blue);}
     .page-badge{background:var(--yellow-lt);color:var(--yellow);font-size:11px;font-weight:600;padding:2px 8px;border-radius:12px;border:1px solid var(--yellow);}
-    .btn-theme{background:none;border:1px solid var(--border);border-radius:6px;padding:6px 10px;cursor:pointer;color:var(--text2);font-size:13px;}
+    .btn-theme {
+      width: 34px; height: 34px; border-radius: 50%;
+      border: 1px solid var(--border); background: var(--surface);
+      cursor: pointer; color: var(--text2);
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: all 0.15s;
+    }
+    .btn-theme:hover { color: var(--text); }
     .main{max-width:960px;margin:0 auto;padding:32px 24px;}
     .report-header{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px 28px;margin-bottom:24px;}
     .report-title{font-size:22px;font-weight:700;margin-bottom:6px;}
@@ -85,7 +92,10 @@
     <span class="version-pill">v2.3.3</span>
     <span class="page-badge">Quality Report</span>
   </div>
-  <button class="btn-theme" onclick="toggleTheme()" id="themeBtn">Dark</button>
+  <button class="btn-theme" id="btnTheme" title="Toggle dark mode">
+    <svg id="iconSun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <svg id="iconMoon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
 </div>
 <div class="main">
   <div class="report-header">
@@ -416,16 +426,22 @@
 </div>
 <script>
   function toggleSection(header) { header.nextElementSibling.classList.toggle('hidden'); }
-  const saved = localStorage.getItem('ybe_theme');
-  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.body.classList.add('dark');
-    document.getElementById('themeBtn').textContent = 'Light';
+  (function(){
+    const saved = localStorage.getItem('yt_editor_theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && prefersDark)) document.body.classList.add('dark');
+    updateThemeIcon();
+  })();
+  function updateThemeIcon(){
+    const isDark = document.body.classList.contains('dark');
+    document.getElementById('iconSun').style.display = isDark ? 'block' : 'none';
+    document.getElementById('iconMoon').style.display = isDark ? 'none' : 'block';
   }
-  function toggleTheme() {
-    const isDark = document.body.classList.toggle('dark');
-    localStorage.setItem('ybe_theme', isDark ? 'dark' : 'light');
-    document.getElementById('themeBtn').textContent = isDark ? 'Light' : 'Dark';
-  }
+  document.getElementById('btnTheme').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('yt_editor_theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    updateThemeIcon();
+  });
 </script>
 </body>
 </html>
