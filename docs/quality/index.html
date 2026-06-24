@@ -28,7 +28,7 @@
     }
     *{box-sizing:border-box;margin:0;padding:0;}
     body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;}
-    .header{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;}
+    .header{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
     .header-left{display:flex;align-items:center;gap:12px;}
     .logo{font-size:16px;font-weight:700;color:var(--text);text-decoration:none;display:inline-flex;align-items:center;gap:8px;}
     .version-pill{background:var(--blue-lt);color:var(--blue-dk);font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;border:1px solid var(--blue);}
@@ -83,6 +83,8 @@
     .logo-lock { display: inline-flex; flex-direction: column; line-height: 1.12; }
     .logo-tag { font-size: 10px; font-weight: 400; color: var(--text2, #888); letter-spacing: .02em; white-space: nowrap; }
     .logo-accent { color: #c8453c; }
+    body.dark .report-meta { color: var(--text2); }
+    body.dark .score-label { color: var(--text2); }
   </style>
 </head>
 <body>
